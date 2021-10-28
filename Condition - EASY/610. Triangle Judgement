@@ -4,3 +4,9 @@ CASE
     ELSE 'No'
 END AS triangle
 FROM triangle
+
+#2 sides plus together is bigger than 3rd to form a triangle
+#structure: CASE
+                WHEN
+            END AS
+            FROM 
