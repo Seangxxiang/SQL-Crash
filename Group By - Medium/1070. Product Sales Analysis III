@@ -1,1 +1,7 @@
-
+SELECT s.product_id, s.year AS first_year, quantity, price
+FROM Sales s
+WHERE (product_id, year) IN (SELECT product_id, MIN(year)
+                             FROM Sales
+                             group by 1)
+                             
+#It is not enough to just select MIN(year), need to select product_id and year together
