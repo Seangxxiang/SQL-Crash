@@ -1,1 +1,7 @@
+SELECT actor_id, director_id
+FROM ActorDirector
+GROUP BY actor_id, director_id
+HAVING COUNT(*) > 2
 
+#line 3 can also be： GROUP BY 1, 2 which means first column, second column 
+#Then count all lines see which one appears more than 2 times
