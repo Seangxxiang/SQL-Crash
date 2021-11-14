@@ -1,1 +1,4 @@
+SELECT ROUND(100*SUM(order_date = customer_pref_delivery_date) / count(delivery_id), 2) AS immediate_percentage 
+FROM Delivery;
 
+#SUM all the immediate orders divide by all delivery_id then * 100 then round 2 decimal numbers
